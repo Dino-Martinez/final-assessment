@@ -47,3 +47,27 @@ label > p, label > input[type="radio"] {
 .list-item {
   margin-block: 1.5rem;
 }
+
+ticker-tape>h1 {
+  position:relative;
+  white-space: pre;
+  overflow: hidden;
+}
+
+ticker-tape>h1::before, ticker-tape>h1::after {
+  content: '';
+  position: absolute;
+  top: .125rem;
+  bottom: .125rem;
+  width: 2px;
+}
+
+ticker-tape>h1::before {
+  left: -.125rem;
+  box-shadow: 3px 0 6px black;
+}
+
+ticker-tape>h1::after {
+  right: -.125rem;
+  box-shadow: -3px 0 6px black;
+}
